@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Кнопка для открытия корзины -->
+        <div class="cart">
+            <button id="cart-button">Cart (0)</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Дарова на рынок</h1>
+            <p>мой магазин, мой выбор!</p>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Что мы наделали</h2>
+            <div class="product-grid">
+                <!-- Продукты -->
+                <div class="product" data-name="дети" data-price="0">
+                    <img src="https://avatars.mds.yandex.net/i?id=0b14999a50ca198b76b3c0f81ba9f59a_l-5342458-images-thumbs&n=13" alt="дети">
+                    <h3>дети</h3>
+                    <p>бесплатно</p>
+                    <button class="add-to-cart">сдать в аренду на 1 день</button>
+                </div>
+                <div class="product" data-name="бебра" data-price="60000">
+                    <img src="https://i.ytimg.com/vi/niZH1R2VKKE/maxresdefault.jpg" alt="бебра">
+                    <h3>бебра</h3>
+                    <p>₽60,000</p>
+                    <button class="add-to-cart">купить</button>
+                </div>
+                <div class="product" data-name="кирпичстам" data-price="205500000">
+                    <img src="https://avatars.mds.yandex.net/i?id=25ae5f241f2839dee9d0ba32e6b0c244-4303774-images-thumbs&n=13" alt="кирпичстам">
+                    <h3>кирпичстам</h3>
+                    <p>₽205,500,000</p>
+                    <button class="add-to-cart">купить</button>
+                </div>
+                <div class="product" data-name="подвал" data-price="1000">
+                    <img src="https://avatars.mds.yandex.net/i?id=74a820c2248ad2c9fc1a137d523c677a_l-6451675-images-thumbs&n=13" alt="подвал">
+                    <h3>подвал</h3>
+                    <p>₽1000</p>
+                    <button class="add-to-cart">купить</button>
+                </div>
+                <div class="product" data-name="танк" data-price="60000000000">
+                    <img src="https://avatars.mds.yandex.net/i?id=f9ca3f9ded412f3244294252b0a98945_l-5226469-images-thumbs&n=13" alt="подвал">
+                    <h3>танк</h3>
+                    <p>₽60,000,000,000</p>
+                    <button class="add-to-cart">купить</button>
+                </div>
+
+                <!-- Дополнительные продукты -->
+            </div>
+        </section>
+
+        <!-- Раздел Контактов -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>не связывайтесь с нами по телефону или электронной почте. Мы никогда не готовы помочь!</p>
+            <div class="contact-info">
+                <p><strong>Телефон:</strong> +8 916 13 21</p>
+                <p><strong>Email:</strong> ya tebya ubyu@.ru</p>
+                <p><strong>Адрес:</strong> ул. я тебя кастрирую  Россия</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно корзины -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <div id="cart-total"></div>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MyShop. Все права защищены.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
